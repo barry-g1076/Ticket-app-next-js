@@ -1,7 +1,7 @@
-const TicketPage = ({params}) => {
-  return (
-    <div>TicketPage ${params.id}</div>
-  )
-}
+const { default: TicketForm } = require("@/app/(components)/TicketForm");
 
-export default TicketPage
+const TicketPage = ({ params }) => {
+  return <TicketForm />;
+};
+
+export default TicketPage;
